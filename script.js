@@ -3,7 +3,7 @@
    Plain JS. No frameworks, no build step.
 
    Sections:
-   1. Config (fill these in before going live)
+   1. Config (fill these in before going live) with klaviyo 
    2. State + DOM refs
    3. Navigation (render step, select answer, next/back)
    4. GTM step tracking
