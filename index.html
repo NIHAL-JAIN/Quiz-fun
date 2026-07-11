@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Find Your GLP-1 Path — Quick Wellness Quiz</title>
+<meta name="description" content="Answer 8 quick questions to see if a GLP-1 program could fit your health goals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<!-- ================= GTM (Google Tag Manager) ================= -->
+<!-- Replace GTM-XXXXXXX with your real container ID -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- ================= End GTM ================= -->
+
+<!-- ================= Meta / Facebook Pixel ================= -->
+<!-- Replace YOUR_PIXEL_ID with your real Meta Pixel ID -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+<!-- ================= End Meta Pixel ================= -->
+</head>
+<body>
+
+<!-- GTM (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="page">
+
+  <header class="brand-bar">
+    <span class="brand-mark">ledisa</span>
+  </header>
+
+  <main class="quiz-shell" id="quizShell">
+
+    <!-- Progress -->
+    <div class="progress-wrap" aria-hidden="false">
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-label">
+        <span id="stepLabel">Step 1 of 8</span>
+      </div>
+    </div>
+
+    <!-- Steps 1-8: questions -->
+    <form id="quizForm" novalidate>
+
+      <section class="step" data-step="1" aria-current="true">
+        <p class="eyebrow">Goal</p>
+        <h1 class="question">What's your main health goal right now?</h1>
+        <div class="options" data-question="goal">
+          <button type="button" class="option" data-value="Lose weight">Lose weight</button>
+          <button type="button" class="option" data-value="Boost energy & metabolism">Boost energy &amp; metabolism</button>
+          <button type="button" class="option" data-value="Manage blood sugar">Manage blood sugar</button>
+          <button type="button" class="option" data-value="Improve overall wellness">Improve overall wellness</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="2">
+        <p class="eyebrow">Your journey</p>
+        <h1 class="question">How would you describe your weight loss journey so far?</h1>
+        <div class="options" data-question="journey">
+          <button type="button" class="option" data-value="Just starting out">Just starting out</button>
+          <button type="button" class="option" data-value="Tried diet & exercise">Tried diet &amp; exercise</button>
+          <button type="button" class="option" data-value="Tried medications before">Tried medications before</button>
+          <button type="button" class="option" data-value="Long-term struggle">Long-term struggle</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="3">
+        <p class="eyebrow">Your target</p>
+        <h1 class="question">How much weight would you like to lose?</h1>
+        <div class="options" data-question="weight_goal">
+          <button type="button" class="option" data-value="Under 20 lbs">Under 20 lbs</button>
+          <button type="button" class="option" data-value="20-50 lbs">20–50 lbs</button>
+          <button type="button" class="option" data-value="50-100 lbs">50–100 lbs</button>
+          <button type="button" class="option" data-value="100+ lbs">100+ lbs</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="4">
+        <p class="eyebrow">About you</p>
+        <h1 class="question">What's your age range?</h1>
+        <div class="options" data-question="age_range">
+          <button type="button" class="option" data-value="18-29">18–29</button>
+          <button type="button" class="option" data-value="30-39">30–39</button>
+          <button type="button" class="option" data-value="40-49">40–49</button>
+          <button type="button" class="option" data-value="50+">50+</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="5">
+        <p class="eyebrow">Health check</p>
+        <h1 class="question">Do any of these apply to you?</h1>
+        <div class="options" data-question="conditions">
+          <button type="button" class="option" data-value="Type 2 diabetes">Type 2 diabetes</button>
+          <button type="button" class="option" data-value="High blood pressure">High blood pressure</button>
+          <button type="button" class="option" data-value="PCOS">PCOS</button>
+          <button type="button" class="option" data-value="None of these">None of these</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="6">
+        <p class="eyebrow">Experience</p>
+        <h1 class="question">Have you used GLP-1 medications before?</h1>
+        <div class="options" data-question="glp1_experience">
+          <button type="button" class="option" data-value="Never">Never</button>
+          <button type="button" class="option" data-value="Currently using">Currently using</button>
+          <button type="button" class="option" data-value="Used in the past">Used in the past</button>
+          <button type="button" class="option" data-value="Not sure">Not sure</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="7">
+        <p class="eyebrow">Motivation</p>
+        <h1 class="question">How motivated are you to start a new program?</h1>
+        <div class="options" data-question="motivation">
+          <button type="button" class="option" data-value="Extremely motivated">Extremely motivated</button>
+          <button type="button" class="option" data-value="Very motivated">Very motivated</button>
+          <button type="button" class="option" data-value="Somewhat motivated">Somewhat motivated</button>
+          <button type="button" class="option" data-value="Just researching">Just researching</button>
+        </div>
+      </section>
+
+      <section class="step" data-step="8">
+        <p class="eyebrow">Timing</p>
+        <h1 class="question">When would you like to start?</h1>
+        <div class="options" data-question="start_timing">
+          <button type="button" class="option" data-value="Immediately">Immediately</button>
+          <button type="button" class="option" data-value="Within a month">Within a month</button>
+          <button type="button" class="option" data-value="In a few months">In a few months</button>
+          <button type="button" class="option" data-value="Just exploring">Just exploring</button>
+        </div>
+      </section>
+
+      <!-- Final step: contact capture -->
+      <section class="step" data-step="9">
+        <p class="eyebrow">Almost done</p>
+        <h1 class="question">Where should we send your results?</h1>
+        <p class="subcopy">We'll match your answers to a plan and send it straight to you.</p>
+
+        <div class="field">
+          <label for="firstName">First name</label>
+          <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+        </div>
+        <p class="error-msg" id="formError" role="alert" aria-live="polite"></p>
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+          <span class="btn-text">See my results</span>
+        </button>
+        <p class="disclaimer">By continuing you agree to receive emails and texts about your results. Msg &amp; data rates may apply.</p>
+      </section>
+
+    </form>
+
+    <!-- Nav controls -->
+    <div class="nav-row" id="navRow">
+      <button type="button" class="back-btn" id="backBtn">Back</button>
+      <button type="button" class="next-btn" id="nextBtn" disabled>Next</button>
+    </div>
+
+  </main>
+
+  <footer class="quiz-footer">
+    <p>Not medical advice. Consult a healthcare provider before starting any weight-loss program.</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
